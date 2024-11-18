@@ -70,7 +70,7 @@ function App() {
           By continent:
           <select value={continentFilter} onChange={(e) => {
             setContinentFilter(e.target.value);
-            setSubregionFilter(''); // clear subregion 
+            setSubregionFilter(''); // Clear subregion when continent is selected
           }}>
             <option value="">All</option>
             {continents.map(continent => (
@@ -82,7 +82,7 @@ function App() {
           By subregion:
           <select value={subregionFilter} onChange={(e) => {
             setSubregionFilter(e.target.value);
-            setContinentFilter(''); // clear continent 
+            setContinentFilter(''); // Clear continent when subregion is selected
           }}>
             <option value="">All</option>
             {subregions.map(subregion => (
